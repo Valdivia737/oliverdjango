@@ -1,0 +1,38 @@
+{% extends 'home.html' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    {% block content %}
+
+    <div class="container">
+    
+    <div class="card" style="width: 25rem; margin-top: 30px;">
+      <img src="static/imgh/harry3.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Harry Potter y el prisionero de Azkaban</h5>
+        <p class="card-text">Harry aguarda con impaciencia el inicio del tercer curso en el Colegio Hogwarts de Magia y Hechicería. Tras haber cump lido trece años, solo y lejos de sus amigos de Hogwarts, Ha rry se pelea con su bigotuda tía Marge, a la que convierte en globo, y debe huir en un autobús mágico. Mientras tant o, de la prisión de Azkaban se ha escapado un terrible vill ano, Sirius Black, un asesino en serie con poderes mágicos que fue cómplice de lord Voldemort y que parece dispuesto a eliminar a Harry del mapa. Y por si esto fuera poco, Harry debe enfrentarse también a unos terribles monstruos, los de mentores, seres abominables capaces de robarles la felicidad a los magos y de borrar todo recuerdo hermoso de aquellos q ue osan mirarlos. Lo que ninguno de estos malvados personaje s sabe es que Harry, con la ayuda de sus fieles amigos Ron y Hermione, es capaz de todo y mucho más.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Autor J. K. Rowling</li>
+        <li class="list-group-item">Año 1999</li>
+        <li class="list-group-item">Idioma Español</li>
+      </ul>
+      <div class="card-body">
+        <a href="{% url 'harry2'  %}" class="card-link">Anterior</a>
+        <a href="{% url 'harry4'  %}" class="card-link">Siguiente</a>
+      </div>
+    </div>
+  </div>
+    {% endblock %}
+
+
+
+  </body>
+</html>

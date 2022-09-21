@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">  
+  </head>
+  <body>
+
+    <!--esta es la barra navegadora-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home'  %}">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'harry1'  %}">Harry Potter 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'harry2'  %}">Harry Potter 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'harry3'  %}">Harry Potter 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'harry4'  %}">Harry Potter 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'harry5'  %}">Harry Potter 5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'harry6'  %}">Harry Potter 6</a>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </nav>
+       <!--esta es la barra navegadora-->
+
+      <br><h1>Libreria de Harry Potter: coleccion de oro</h1></b>
+
+      
+    {% block content %}
+
+      <!--esto sera donde se incluye la imagen del libro-->
+      <div class="container">
+      <div class="card" style="width: 25rem; margin-top: 30px;">
+        <img src="static/imgh/harrycole.png" class="card-img-top" alt="harry1">
+        <div class="card-body">
+          <h5 class="card-title">Harry Potter la coleccion</h5>
+          <p class="card-text">Coleccion de oro completa de Harry Potter</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Autor J. K. Rowling</li>
+          <li class="list-group-item">Año 2020</li>
+          <li class="list-group-item">Idioma Español</li>
+        </ul>
+        <div class="card-body">
+          <a href="{% url 'harry1'  %}" class="card-link">Siguiente</a>
+        </div>
+      </div>
+    </div>
+       <!--esto sera donde se incluye la imagen del libro-->
+       {% endblock %}
+
+
+       <footer class="text-muted py-5">
+        <div class="container">
+          <p class="mb-1">Lagos Valdivia Oliver</p>
+          <p class="mb-0"> Para mas contenido <a href="https://www.instagram.com/harrypotterfilm">Visita instagram</a></p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

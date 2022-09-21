@@ -1,0 +1,41 @@
+{% extends 'home.html' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    
+
+    {% block content %}
+    <div class="container"> 
+      
+    <div class="card" style="width: 25rem; margin-top: 30px; ">
+      <img src="static/imgh/harry6.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Harry Potter y el misterio del príncipe</h5>
+        <p class="card-text">Con dieciséis años cumplidos, Harry inicia el sexto curso en Hogwarts en medio de terribles acontecimientos que asolan Inglaterra. Elegido capitán de quidditch, los entrenamientos, los exámenes y las chicas ocupan todo su tiempo, pero la tranquilidad dura poco. A pesar de los férreos controles de seguridad que protegen la escuela, dos alumnos son brutalmente atacados. Dumbledore sabe que se acerca el momento, anunciado por la Profecía, en que Harry y Voldemort se enfrentarán a muerte: "El único con poder para vencer al Señor Tenebroso se acerca... Uno de los dos debe morir a manos del otro, pues ninguno de los dos podrá vivir mientras siga el otro con vida". El anciano director solicitará la ayuda de Harry y juntos emprenderán peligrosos viajes para intentar debilitar al enemigo, para lo cual el joven mago, contará con la ayuda de un viejo libro de pociones perteneciente a un misterioso príncipe, alguien que se hace llamar Príncipe Mestizo. En lo que ya se percibe claramente como una magna obra que, cuando concluya, tendrá casi cuatro mil páginas divididas en siete partes, es asombrosa la capacidad de la autora para mantener en vilo al lector con una trama de gran suspense construida sobre la base de un amplísimo despliegue de claves e indicios que encajan con total precisión y coherencia en un enorme rompecabezas literario. Entre las tres versiones y los dos formatos de encuadernación, en total se producirán siete ediciones distintas de Harry Potter y el misterio del príncipe, con una tirada conjunta que superará ampliamente el millón de ejemplares, cifra similar a la tirada de la quinta entrega. Conscientes de la importancia que la preservación del medio ambiente ha cobrado en nuestra sociedad, y del valor ejemplar que la serie Harry Potter supone para millones de niños y jóvenes, Ediciones Salamandra, en consonancia con los deseos de la autora, J.K. Rowling, utilizará en la producción de Harry Potter y el misterio del príncipe un papel fabricado con pasta que se ajusta a las normas FSC, con un mínimo de 30 por ciento de fibra absolutamente respetuosa con el medio ambiente y una explotación forestal sostenible.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Autor J. K. Rowling</li>
+        <li class="list-group-item">Año 2005</li>
+        <li class="list-group-item">Idioma Español</li>
+      </ul>
+      <div class="card-body">
+        <a href="{% url 'harry5'  %}" class="card-link">Anterior</a>
+      </div>
+    </div>
+  </div>
+    {% endblock %}
+
+
+
+  </body>
+</html>
+
+
+
+
+

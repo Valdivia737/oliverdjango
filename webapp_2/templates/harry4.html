@@ -1,0 +1,38 @@
+{% extends 'home.html' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    {% block content %}
+
+    <div class="container">
+        <div class="card" style="width: 25rem; margin-top: 30px; ">
+      <img src="static/imgh/harry4.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Harry Potter y el cáliz de fuego</h5>
+        <p class="card-text">Tras otro abominable verano con los Dursley, Harry se dispo ne a iniciar el cuarto curso en Hogwarts, la famosa escuela de magia y hechicería. A sus catorce años, a Harry le gust aría ser un joven mago como los demás y dedicarse a aprend er nuevos sortilegios, encontrarse con sus amigos Ron y Herm ione y asistir con ellos a los Mundiales de quidditch. Sin e mbargo, al llegar al colegio le espera una gran sorpresa que lo obligará a enfrentarse a los desafíos más temibles de toda su vida. Si logra superarlos, habrá demostrado que ya no es un niño y que está preparado para vivir las nuevas y emocionantes experiencias que el futuro le depara.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Autor J. K. Rowling</li>
+        <li class="list-group-item">Año 2000</li>
+        <li class="list-group-item">Idioma Español</li>
+      </ul>
+      <div class="card-body">
+        <a href="{% url 'harry3'  %}" class="card-link">Anterior</a>
+        <a href="{% url 'harry5'  %}" class="card-link">Siguiente</a>
+      </div>
+    </div>
+  </div>
+
+    {% endblock %}
+
+
+
+  </body>
+</html>

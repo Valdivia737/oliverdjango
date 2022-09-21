@@ -1,0 +1,39 @@
+{% extends 'home.html' %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    {% block content %}
+
+    <div class="container">
+    
+    <div class="card" style="width: 25rem; margin-top: 30px; ">
+      <img src="static/imgh/harry1.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Harry Potter y la piedra filosofal</h5>
+        <p class="card-text">Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería. A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan espec ial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el cam peón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y hará un puñado de buenos a migos... aunque también algunos temibles enemigos. Pero, so bre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. Es un verdadero mago!</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Autor J. K. Rowling</li>
+        <li class="list-group-item">Año 1997</li>
+        <li class="list-group-item">Idioma Español</li>
+      </ul>
+      <div class="card-body">
+        <a href="{% url 'home'  %}" class="card-link">Anterior</a>
+        <a href="{% url 'harry2'  %}" class="card-link">Siguiente</a>
+      </div>
+    </div>
+  </div>
+    
+    {% endblock %}
+
+
+
+  </body>
+</html>
